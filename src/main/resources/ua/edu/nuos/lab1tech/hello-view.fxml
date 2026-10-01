@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="12.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ua.edu.nuos.lab1tech.task.Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label text="Варіант 6 — метод Сімпсона" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+    <Label text="∫₁² (eˣ − 1)/(eˣ + 1) dx" style="-fx-font-size: 14px;"/>
+
+    <TextField fx:id="intervals" promptText="Кількість розбиттів n (парне)"/>
+    <TextField fx:id="threads" promptText="Кількість потоків"/>
+    <Button onAction="#calculate" text="Обчислити"/>
+
+    <Label fx:id="resultLabel" wrapText="true"/>
+</VBox>
